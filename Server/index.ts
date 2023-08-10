@@ -13,7 +13,7 @@ app.use("/auth", authRoutes);
 app.use("/todo", todoRoutes);
 
 
-mongoose.connect('mongodb+srv://Sucharita7:UJtNT36T8nBmunJb@cluster0.6fe6e9q.mongodb.net/Todo_App?retryWrites=true&w=majority')
+mongoose.connect('MongoDB Connection String')
   .then(res => {
     app.listen(3000, () => {
       console.log(`Server is running on port 3000`);
